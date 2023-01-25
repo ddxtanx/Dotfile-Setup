@@ -1,6 +1,8 @@
 *
 !.gitignore
-
+!README.md
 !.antigenrc
 !.zshrc
+!.config
+.config/*
 !.config/nvim
