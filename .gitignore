@@ -1,0 +1,6 @@
+*
+!.gitignore
+
+!.antigenrc
+!.zshrc
+!.config/nvim
