@@ -1,8 +1,2 @@
-*
-!.gitignore
-!README.md
-!.antigenrc
-!.zshrc
-!.config
-.config/*
-!.config/nvim
+.machine_specific_configs
+.get_antigen
