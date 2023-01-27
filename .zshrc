@@ -4,8 +4,8 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 # confirmations, etc.) must go above this block; everything else may go below.
 
 # REQUIRES: antigen, powelevel10k, thefuck, etc
-source ~/.get_antigen
-source ~/.antigenrc
+source .get_antigen
+source .antigenrc
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -19,4 +19,4 @@ eval $(thefuck --alias)
 # -------------------------------------------------
 
 # THIS MUST INCLUDE zsh_syntax_highlighting source somewhere in it!
-source ~/.machine_specific_configs
+source .machine_specific_configs
