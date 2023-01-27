@@ -1,12 +1,13 @@
+# Set your own CONFIG_DIR in ~/.zshrc pointing to where this repo is installed.
+# CONFIG_DIR=~/Dotfile-Setup
 ZSH_THEME=powerlevel10k/powerlevel10k
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 
 # REQUIRES: antigen, powelevel10k, thefuck, etc
-source .get_antigen
+source $CONFIG_DIR/.get_antigen
 source .antigenrc
-
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -19,4 +20,4 @@ eval $(thefuck --alias)
 # -------------------------------------------------
 
 # THIS MUST INCLUDE zsh_syntax_highlighting source somewhere in it!
-source .machine_specific_configs
+source $CONFIG_DIR/.machine_specific_configs
