@@ -7,7 +7,7 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 
 # REQUIRES: antigen, powelevel10k, thefuck, etc
 source $CONFIG_DIR/.get_antigen
-source .antigenrc
+source $CONFIG_DIR/.antigenrc
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
