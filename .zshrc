@@ -12,7 +12,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-eval $(thefuck --alias)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -21,3 +20,4 @@ eval $(thefuck --alias)
 
 # THIS MUST INCLUDE zsh_syntax_highlighting source somewhere in it!
 source $CONFIG_DIR/.machine_specific_configs
+eval $(thefuck --alias)
